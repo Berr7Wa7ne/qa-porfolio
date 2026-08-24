@@ -1,0 +1,40 @@
+
+> build
+> next build
+
+  ▲ Next.js 14.2.35
+
+   Linting and checking validity of types ...
+   Creating an optimized production build ...
+(node:7100) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:9272) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ✓ Compiled successfully
+   Collecting page data ...
+
+> Build error occurred
+Error: Cannot find module 'C:\Users\cosyb\Desktop\qa_portfolio\.next\server\next-font-manifest.json'
+Require stack:
+- C:\Users\cosyb\Desktop\qa_portfolio\node_modules\next\dist\export\index.js
+- C:\Users\cosyb\Desktop\qa_portfolio\node_modules\next\dist\build\index.js
+- C:\Users\cosyb\Desktop\qa_portfolio\node_modules\next\dist\cli\next-build.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1248:15)
+    at C:\Users\cosyb\Desktop\qa_portfolio\node_modules\next\dist\server\require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:1074:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1339:12)
+    at mod.require (C:\Users\cosyb\Desktop\qa_portfolio\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:135:16)
+    at exportAppImpl (C:\Users\cosyb\Desktop\qa_portfolio\node_modules\next\dist\export\index.js:337:27)
+    at async C:\Users\cosyb\Desktop\qa_portfolio\node_modules\next\dist\export\index.js:623:16 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\cosyb\\Desktop\\qa_portfolio\\node_modules\\next\\dist\\export\\index.js',
+    'C:\\Users\\cosyb\\Desktop\\qa_portfolio\\node_modules\\next\\dist\\build\\index.js',
+    'C:\\Users\\cosyb\\Desktop\\qa_portfolio\\node_modules\\next\\dist\\cli\\next-build.js'
+  ]
+}

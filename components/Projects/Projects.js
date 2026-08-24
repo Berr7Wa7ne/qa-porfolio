@@ -2,15 +2,15 @@ import { useEffect, useRef } from "react";
 import { MENULINKS, PROJECTS } from "../../constants";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import ProjectTile from "./ProjectTile/ProjectTile";
+import ProjectCard from "./ProjectCardModern";
 
 const Projects = ({ isDesktop, clientHeight }) => {
   const sectionRef = useRef(null);
   const sectionTitleRef = useRef(null);
 
   useEffect(() => {
-    let projectsScrollTrigger;
     let projectsTimeline;
+    let projectsScrollTrigger;
 
     if (isDesktop) {
       [projectsTimeline, projectsScrollTrigger] = getProjectsSt();
@@ -24,11 +24,12 @@ const Projects = ({ isDesktop, clientHeight }) => {
     const [revealTimeline, revealScrollTrigger] = getRevealSt();
 
     return () => {
-      projectsScrollTrigger && projectsScrollTrigger.kill();
       projectsTimeline && projectsTimeline.kill();
+      projectsScrollTrigger && projectsScrollTrigger.kill();
       revealScrollTrigger && revealScrollTrigger.kill();
       revealTimeline && revealTimeline.progress(1);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sectionRef, sectionTitleRef, isDesktop]);
 
   const getRevealSt = () => {
@@ -99,24 +100,26 @@ const Projects = ({ isDesktop, clientHeight }) => {
           <h2 className="text-6xl mt-2 font-medium text-gradient w-fit staggered-reveal">
             My Projects
           </h2>
-          <p className="text-[1.65rem] font-medium md:max-w-lg max-w-sm mt-2 staggered-reveal">
+          <p className="text-[1.65rem] font-medium md:max-w-lg w-full mt-2 staggered-reveal">
             Some things I&apos;ve built with love, expertise and a pinch of
             magical ingredients.{" "}
           </p>
         </div>
+
         <div
           className={`${
             clientHeight > 650 ? "mt-12" : "mt-8"
           } flex project-wrapper no-scrollbar w-fit staggered-reveal`}
         >
           {PROJECTS.map((project, index) => (
-            <ProjectTile
-              classes={
-                index === PROJECTS.length - 1 ? "" : "mr-8 xs:mr-10 sm:mr-12"
-              }
-              project={project}
+            <div
               key={project.name}
-            />
+              className={`shrink-0 w-[26rem] sm:w-[30rem] ${
+                index === PROJECTS.length - 1 ? "" : "mr-8 xs:mr-10 sm:mr-12"
+              }`}
+            >
+              <ProjectCard project={project} />
+            </div>
           ))}
         </div>
       </div>

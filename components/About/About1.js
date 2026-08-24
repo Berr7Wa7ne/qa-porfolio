@@ -56,12 +56,13 @@ const About1 = ({ clientHeight }) => {
           className="font-medium text-[2.70rem] md:text-6xl lg:text-[4rem] text-center"
         >
           <span className="about-1 leading-tight">
-            I&apos;m a passionate Engineer who&apos;s focused on building
-            scalable and performant apps.{" "}
+            I&apos;m a passionate QA Engineer who is focused on catching
+            what others miss before users ever do.{" "}
           </span>
           <span className="about-2 leading-tight">
-            I take responsibility to craft a good user experience using modern
-            frontend architecture.{" "}
+            Having built the apps I now test, I bring a developer&apos;s eye
+            to quality — sharp attention to detail, without losing sight of
+            the user experience.{" "}
           </span>
         </h2>
       </div>

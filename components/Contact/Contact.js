@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Filter from "bad-words";
 import toast, { Toaster } from "react-hot-toast";
-import Fade from "react-reveal/Fade";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useSfx } from "utils/use-sfx";
@@ -291,7 +290,7 @@ const Contact = () => {
         </div>
 
         <form className="pt-10 sm:mx-auto sm:w-[30rem] md:w-[35rem] staggered-reveal">
-          <Fade bottom distance={"4rem"}>
+          <div>
             <div className="relative">
               <input
                 type="text"
@@ -341,7 +340,7 @@ const Contact = () => {
                 Message
               </label>
             </div>
-          </Fade>
+          </div>
         </form>
         <div className="mt-9 mx-auto link">
           <button
