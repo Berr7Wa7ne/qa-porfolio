@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import Typed from "typed.js";
 import gsap from "gsap";
+import Image from "next/image";
 import Button from "../Button/Button";
 import Profiles from "../Profiles/Profiles";
 import styles from "./Hero.module.scss";
@@ -98,15 +99,27 @@ const Hero = () => {
           <Profiles />
         </div>
         <div className="staggered-reveal pt-4">
-          <Button href={`#${MENULINKS[4].ref}`} classes="link" type="primary">
-            Let&apos;s Talk
+          <Button 
+            href="https://drive.google.com/file/d/1ayqYq4itHxbukGnXd1ClLHz8xW6NzdzA/view?usp=sharing" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            classes="link" 
+            type="primary"
+          >
+            Resume
           </Button>
         </div>
       </div>
-      <div
-        className="absolute invisible w-4/12 bottom-1.5 lg:visible lg:right-12 2xl:right-16"
-        ref={lottieRef}
-      />
+      <div className="absolute invisible w-4/12 bottom-1.5 lg:visible lg:right-12 2xl:right-16 staggered-reveal">
+        <Image
+          src="/dp.jpeg" 
+          alt="Uke Cosmas Profile Picture"
+          width={400}
+          height={500}
+          className="object-cover rounded-[8000px] shadow-xl"
+          priority // Ensures high-priority loading as it's within the viewport on load
+        />
+      </div>
     </section>
   );
 };

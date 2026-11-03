@@ -46,7 +46,7 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-  "A pragmatic QA Engineer",
+  "A pragmatic QA Automation Engineer",
   "I break things so users don't have to",
   "First a developer, now quality-obsessed",
 ];
@@ -103,22 +103,6 @@ export const SKILLS = {
 
 export const PROJECTS = [
   {
-    name: "Occupy Admin Dashboard",
-    logoKey: "occupy", // TODO: add a square/circular logo asset with this key
-    techStack: ["typescript", "nextjs", "tailwindcss", "postman", "jira"],
-    description:
-      "Designed and executed functional and regression test suites for customer, rider, and supermarket dashboards, identifying defects across cart grouping, order assignment, and inventory synchronization workflows before public launch. Validated location-based product discovery and delivery routing, simulating estate-level traffic and delivery delays to ensure accurate ETAs and successful last-mile delivery.",
-    link: "https://occupyestate.com",
-  },
-  {
-    name: "TRX",
-    logoKey: "trx", // TODO: add a square/circular logo asset with this key
-    techStack: ["postman", "typescript", "nextjs", "tailwindcss"],
-    description:
-      "Currently serving as QA on TRX, a multi-role fintech platform spanning buyer, seller, financier, and admin workflows — running UAT and bug-fixing cycles, while also contributing frontend code to the same modules I now help verify. Actively in progress, so no public metrics yet.",
-    link: "https://trx-platform-two.vercel.app/login",
-  },
-  {
     name: "QampusPlus",
     logoKey: "qampusplus", // TODO: add a square/circular logo asset with this key
     techStack: ["jest", "testing-library", "jira", "typescript", "nextjs"],
@@ -134,13 +118,21 @@ export const PROJECTS = [
       "On QampusPay, the fee-collection layer of the same school management suite, I manually tested payment-tracking and invoicing flows — verifying tuition, hostel, and fee calculations against expected values before release — alongside writing integration tests for the underlying API layer. QampusPay operates as private infrastructure, so transaction-volume figures aren't publicly available.",
     link: "https://qampuspay.com/",
   },
+    {
+    name: "Occupy Admin Dashboard",
+    logoKey: "occupy", // TODO: add a square/circular logo asset with this key
+    techStack: ["typescript", "nextjs", "tailwindcss", "postman", "jira"],
+    description:
+      "Designed and executed functional and regression test suites for customer, rider, and supermarket dashboards, identifying defects across cart grouping, order assignment, and inventory synchronization workflows before public launch. Validated location-based product discovery and delivery routing, simulating estate-level traffic and delivery delays to ensure accurate ETAs and successful last-mile delivery.",
+    link: "https://occupyestate.com",
+  },
   {
     name: "Moverse Portfolio",
     logoKey: "moverse-portfolio", // TODO: add a square/circular logo asset with this key
     techStack: ["nextjs", "sanity", "tailwindcss", "git"],
     description:
       "Built and shipped solo for Moverse Technologies — a Next.js + Sanity CMS site deployed via cPanel with a CI/CD pipeline that auto-builds and deploys on every push to main. Since launching in April, it's brought in 7 real clients across app development, graphic design, and WordPress services.",
-    link: "https://moverse-portfolio.vercel.app/",
+    link: "https://moversehaste.com/",
   },
   {
     name: "Moverse Agent",
@@ -148,7 +140,15 @@ export const PROJECTS = [
     techStack: ["nextjs", "supabase", "typescript"],
     description:
       "A shared WhatsApp inbox for Moverse's support team, built with the WhatsApp Business API — multiple agents can respond to customers from one shared number, with Supabase powering real-time message sync across the console.",
-    link: "https://moverse-agent.vercel.app/",
+    link: "https://moverse-agent.vercel.app/", 
+  },
+  {
+    name: "TRX",
+    logoKey: "trx", // TODO: add a square/circular logo asset with this key
+    techStack: ["postman", "typescript", "nextjs", "tailwindcss"],
+    description:
+      "Currently serving as QA on TRX, a multi-role fintech platform spanning buyer, seller, financier, and admin workflows — running UAT and bug-fixing cycles, while also contributing frontend code to the same modules I now help verify. Actively in progress, so no public metrics yet.",
+    link: "https://trx-platform-two.vercel.app/login",
   },
 ];
 

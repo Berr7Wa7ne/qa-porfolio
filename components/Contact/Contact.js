@@ -26,9 +26,23 @@ const empty = () =>
   });
 
 const error = () =>
-  toast.error("Error sending your message", {
-    id: "error",
-  });
+  toast.error(
+    <span>
+      Error sending your message.
+      <br />
+      You can also reach me directly at{" "}
+      <a
+        href="mailto:ahakiricosmas@gmail.com"
+        className="font-medium underline text-white hover:text-gray-light-2"
+      >
+        ahakiricosmas@gmail.com
+      </a>
+    </span>,
+    {
+      id: "error",
+      duration: 10000,
+    }
+  );
 
 const success = () =>
   toast.success("Message sent successfully", {

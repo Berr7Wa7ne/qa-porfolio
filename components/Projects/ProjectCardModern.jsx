@@ -69,16 +69,27 @@ const ProjectCardModern = ({ project }) => {
         </div>
       )}
 
-      <p
-        className="text-gray-light-2 text-xl leading-relaxed overflow-hidden"
-        style={{
-          display: "-webkit-box",
-          WebkitLineClamp: 5,
-          WebkitBoxOrient: "vertical",
-        }}
-      >
-        {description}
-      </p>
+      <div className="relative">
+        <p
+          tabIndex={0}
+          aria-describedby={`${name.toLowerCase().replace(/\s+/g, "-")}-description`}
+          className="peer cursor-help rounded-sm text-gray-light-2 text-xl leading-relaxed overflow-hidden outline-none focus-visible:ring-1 focus-visible:ring-gray-dark-1"
+          style={{
+            display: "-webkit-box",
+            WebkitLineClamp: 5,
+            WebkitBoxOrient: "vertical",
+          }}
+        >
+          {description}
+        </p>
+        <div
+          id={`${name.toLowerCase().replace(/\s+/g, "-")}-description`}
+          role="tooltip"
+          className="pointer-events-none absolute bottom-full left-0 z-30 mb-2 w-full max-h-44 overflow-y-auto rounded-xl border border-gray-dark-1 bg-[#10141c] p-4 text-base leading-relaxed text-gray-light-2 shadow-2xl opacity-0 transition-opacity duration-200 peer-hover:opacity-100 peer-focus:opacity-100"
+        >
+          {description}
+        </div>
+      </div>
 
     </div>
   );
