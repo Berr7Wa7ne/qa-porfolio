@@ -1,7 +1,7 @@
 # devfolio
 
-<a href="https://shubhporwal.me">
-  <img alt="devfolio" src="./public/preview.png" />
+<a href="https://ukecosmas.online">
+  <img alt="preview" src="./public/qa-image.jpg" />
 </a>
 
 [![version](https://img.shields.io/badge/version-1.0.0-black)](https://github.com/shubh73/devfolio)
@@ -10,7 +10,7 @@
 
 👨‍🎓 An eye-catching developer Portfolio, Built on NextJS, GSAP, Tailwind and React
 
-### ✨ [Live Demo](http://www.shubhporwal.me/)
+### ✨ [Live Demo](http://www.ukecosmas.online/)
 
 ## Getting Started
 
@@ -33,6 +33,3 @@ When people ask me whether they may use the code for their own website, I typica
 
 Every time I learn that someone has duplicated my website without giving me credit, it saddens me. This version of my website took a significant amount of work to construct, and I'm pleased of it! All I ask is that you empathize with my situation and leave the footer unaltered.
 
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=shubh73/devfolio&type=Date)](https://www.star-history.com/#shubh73/devfolio&Date)
