@@ -2,6 +2,8 @@
 
 <a href="https://ukecosmas.online">
   <img alt="preview" src="./public/qa-image.jpg" />
+<a href="https://ukecosmas.online">
+  <img alt="preview" src="./public/qa-image.jpg" />
 </a>
 
 [![version](https://img.shields.io/badge/version-1.0.0-black)](https://github.com/shubh73/devfolio)
