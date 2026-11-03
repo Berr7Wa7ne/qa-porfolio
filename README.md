@@ -1,12 +1,12 @@
-# devfolio
+# Portfolio
 
 <a href="https://ukecosmas.online">
   <img alt="preview" src="./public/qa-image.JPG" />
 </a>
 
-[![version](https://img.shields.io/badge/version-1.0.0-black)](https://github.com/shubh73/devfolio)
-[![license](https://img.shields.io/github/license/shubh73/devfolio?color=black)](https://github.com/shubh73/devfolio/blob/main/LICENSE.md)
-[![If Useful](https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=flat&color=black)](https://github.com/shubh73/devfolio)
+[![version](https://img.shields.io/badge/version-1.0.0-black)](https://github.com/Berr7Wa7ne/qa-porfolio)
+[![license](https://img.shields.io/github/license/shubh73/devfolio?color=black)](https://github.com/Berr7Wa7ne/qa-porfolio/blob/main/LICENSE.md)
+[![If Useful](https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=flat&color=black)](https://github.com/Berr7Wa7ne/qa-porfolio)
 
 👨‍🎓 An eye-catching developer Portfolio, Built on NextJS, GSAP, Tailwind and React
 
