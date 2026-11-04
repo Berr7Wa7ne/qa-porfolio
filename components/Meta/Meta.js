@@ -62,9 +62,8 @@ const Meta = () => (
           url: METADATA.siteUrl,
           jobTitle: "QA Engineer",
           sameAs: [
-            "https://github.com/shubh73",
-            "https://x.com/shubhporwal24",
-            "https://www.linkedin.com/in/shubhporwal/",
+            "https://github.com/Berr7Wa7ne",
+            "https://www.linkedin.com/in/uke-cosmas-444619351/",
           ],
         }),
       }}
